@@ -7,8 +7,8 @@ const VideoDetail = ({ video }) => {
 
   return (
     <div>
-      <div className="embed-responsive embed-responsive-16by9">
-        <iframe title="random weather video" className="embed-responsive-item" src={url} />
+      <div className="">
+        <iframe title="random weather video" src={url} />
       </div>
     </div>
   );

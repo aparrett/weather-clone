@@ -15,13 +15,20 @@ class Home extends Component {
     this.setState({ selectedVideo: videos[0], videos });
   }
 
+  onVideoSelect(video) {
+    this.setState({ selectedVideo: video });
+  }
+
   render() {
     const { selectedVideo, videos } = this.state;
 
     return (
       <React.Fragment>
         <VideoDetail video={selectedVideo}/>
-        <VideoColumn videos={videos.filter(v => v.etag !== selectedVideo.etag)}/>
+        <VideoColumn 
+          onVideoSelect={this.onVideoSelect.bind(this)} 
+          videos={videos.filter(v => v.etag !== selectedVideo.etag)}
+        />
       </React.Fragment>
     ); 
   }

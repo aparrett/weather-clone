@@ -1,10 +1,15 @@
 import React from 'react';
+import VideoColumnItem from './VideoColumnItem';
 
-const VideoColumn = ({ videos }) => {
+const VideoColumn = ({ videos, onVideoSelect }) => {
   if (videos.length === 0 ) return null;
   
   return (
-    <ul>{videos.map(v => <li>{v.etag}</li>)}</ul>
+    <ul>
+      {videos.map(v => 
+        <VideoColumnItem video={v} key={v.etag} onVideoSelect={onVideoSelect} />)
+      }
+    </ul>
   );
 };
 
