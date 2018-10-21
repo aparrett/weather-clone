@@ -1,0 +1,10 @@
+.videoColumn {
+  list-style: none;
+}
+
+@media (min-width: 992px) {
+  .videoColumn {
+    width:33%;
+    float:left;
+  }
+}
