@@ -4,13 +4,36 @@
   box-sizing: border-box;
 }
 
+// Fonts
+h2 {
+  font-size: $font-s;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $color-primary;
+  margin: 0;
+}
+
+.heading {
+  padding: 1rem;
+}
+
 .main-container {
   max-width:1200px;
   margin: 0 auto;
 }
 
+.section-full {
+  width: 100%;
+  clear: both;
+}
+
 @media (min-width: $desktop-width) {
   .main-container {
     padding-top: 1rem;
+  }
+
+  h2 {
+    font-size: $font-mx;
+    color: $color-grey-dark;
   }
 }

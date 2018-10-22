@@ -5,13 +5,14 @@
   display: flex;
   flex-direction: column;
   padding: 0;
+  margin-bottom: 2rem;
 
   li { 
     padding: 1rem;
-    border-bottom: 1px solid #dadada; 
-  }
+    border-bottom: 1px solid $color-grey-light; 
 
-  li:first-child { border-top: 1px solid #dadada; }
+    &:first-child { border-top: 1px solid $color-grey-light; }
+  }
 
   .thumbnail-wrapper {
     float: left;
@@ -46,9 +47,9 @@
       border: none; 
       padding: 0;
       margin-bottom: 1rem;
-    }
 
-    li:first-child { border-top: none; }
+      &:first-child { border-top: none; }
+    }
 
     .thumbnail-wrapper {
       width: 100%;

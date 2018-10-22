@@ -1,12 +1,11 @@
 @import '../../../theme/variables';
 
 .videoDetail {
-  
   .details {
     padding: 1rem;
 
     .headline {
-      font-size: $font-mx;
+      font-size: $font-mxx;
       font-weight: $font-bold;
     }
   }
@@ -14,19 +13,21 @@
 
 @media (min-width: $desktop-width) {
   .videoDetail {
-    width:65%;
+    width: 65%;
     float: left;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
 
     .details {
       padding: 1rem 0;
-      
+
       .headline {
         font-size: $font-xl;
         font-weight: $font-regular;
       }
       
       .description {
-        font-size: $font-mx;
+        font-size: $font-mxx;
       }
     }
   }

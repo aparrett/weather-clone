@@ -24,7 +24,7 @@ class HomeVideos extends Component {
     const { selectedVideo, videos } = this.state;
 
     return (
-      <main className="homeVideos">
+      <main className="homeVideos section-full">
         <VideoDetail video={selectedVideo}/>
         <VideoColumn 
           onVideoSelect={this.onVideoSelect.bind(this)} 
