@@ -11,7 +11,12 @@ const VideoDetail = ({ video }) => {
       <div className="embed-responsive embed-responsive-16by9">
         <iframe className="embed-responsive-item" title="random weather video" src={url} />
       </div>
+      <div className="details">
+        <h1 className="headline">{video.snippet.title}</h1>
+        <div className="description">{video.snippet.description}</div>
+      </div>
     </div>
   );
 }
+
 export default VideoDetail;

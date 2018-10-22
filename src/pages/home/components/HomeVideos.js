@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { fetchVideos } from '../../../service/youtube';
 import VideoDetail from './VideoDetail';
 import VideoColumn from './VideoColumn';
+import '../assets/HomeVideos.scss';
 
 class HomeVideos extends Component {
   state = { selectedVideo: null, videos: [] }
@@ -23,7 +24,7 @@ class HomeVideos extends Component {
     const { selectedVideo, videos } = this.state;
 
     return (
-      <main>
+      <main className="homeVideos">
         <VideoDetail video={selectedVideo}/>
         <VideoColumn 
           onVideoSelect={this.onVideoSelect.bind(this)} 
