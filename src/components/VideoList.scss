@@ -1,0 +1,80 @@
+@import '../theme/variables';
+
+.videoList ul {
+  border-top: 1px solid $color-grey-light;
+  padding-left: 1rem;
+  padding-right: .5rem;
+
+  li {
+    list-style: none;
+    padding: 1rem 0 0;
+    border-bottom: 1px solid $color-grey-light;
+    display: flex;
+
+    .thumbnail-wrapper {
+      width: 33.3%;
+
+      img { width: 100%; }
+    }
+
+    .details {
+      width: 66.6%;
+      padding-left: 1rem;
+      padding-bottom: 1rem;
+
+      .channel {
+        font-size: 0.6875rem;
+        color: $color-primary;
+        text-transform: uppercase;
+      }
+
+      .title {
+        font-size: $font-xs;
+        font-weight: $font-bold;
+        padding-top: .25rem;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+
+  .videoList {
+    h2.heading {
+      padding-top: 2rem;
+    }
+
+    ul {
+      padding-right: 0;
+      border-top: none;
+      display: flex;
+
+      li {
+        padding: 0 1rem; 
+        width: 25%;
+        flex-direction: column;
+        border-bottom: none;
+
+        .thumbnail-wrapper {
+          width: 100%;
+        }
+
+        .details {
+          width: 100%;
+          padding-left: 0;
+
+          .channel {
+            padding-top: .45rem;
+            color: $color-grey;
+          }
+
+          .title {
+            font-weight: $font-regular;
+            font-size: $font-s;
+          }
+        }
+      }
+    }
+  }
+}

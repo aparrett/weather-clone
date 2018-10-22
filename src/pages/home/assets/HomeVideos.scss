@@ -1,0 +1,7 @@
+@import '../../../theme/variables';
+
+@media (min-width: $desktop-width) {
+  .homeVideos {
+    max-width: 70%;
+  }
+}

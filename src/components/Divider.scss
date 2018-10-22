@@ -1,0 +1,14 @@
+@import '../theme/variables';
+
+.divider {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .divider {
+    display: block;
+    clear: both;
+    color: $color-grey-light;
+    margin: 0 15px;
+  }
+}
