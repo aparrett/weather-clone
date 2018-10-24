@@ -4,10 +4,14 @@ const SearchBarResultsList = ({ cities }) => {
   if (cities.length === 0) 
     return <div className="no-results">No items to display.</div>;
 
-  return cities.map(city => 
-    <li key={city.adminCode2}>
-      {`${city.placeName}, ${city.adminName1}, ${city.countryCode}`}
-    </li>
+  return (
+    <ul>
+      {cities.map(city => 
+        <li key={city.adminCode2}>
+          {`${city.placeName}, ${city.adminName1}, ${city.countryCode}`}
+        </li>
+      )}
+    </ul>
   );
 };
 
@@ -34,9 +38,7 @@ class SearchBarResults extends Component {
             <div className="loadingBar__bar"/>
           </div>}
         <div className="title">Search Results</div>
-        <ul>
-          <SearchBarResultsList cities={this.props.cities} />
-        </ul>
+        <SearchBarResultsList cities={this.props.cities} />
       </div>
     );
   }
