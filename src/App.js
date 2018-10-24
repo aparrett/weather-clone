@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Home from './pages/home/Home.js';
-import Header from './components/Header.js';
+import Header from './components/header/Header.js';
 
 class App extends Component {
   state = { cities: [] };

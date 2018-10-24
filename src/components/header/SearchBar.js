@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './SearchBar.scss';
-import searchIcon from './assets/search-icon.png';
-import { findCities } from '../service/geo';
+import searchIcon from '../assets/search-icon.png';
+import { findCities } from '../../service/geo';
 
 class SearchBar extends Component {
   state = { city: null, citiesFound: [], showResults: false, doneLoading: false };
