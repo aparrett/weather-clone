@@ -3,9 +3,9 @@ import SearchBar from './SearchBar';
 import LocationBar from './LocationBar';
 import NavBar from './NavBar';
 
-const Header = () => (
+const Header = ({ addCity }) => (
   <React.Fragment>
-    <SearchBar />
+    <SearchBar addCity={addCity} />
     <LocationBar />
     <NavBar />
   </React.Fragment>
