@@ -17,7 +17,7 @@ class SearchBar extends Component {
     this.setState({ doneLoading: false });
 
     const citiesFound = await findCities(this.state.city);
-    this.setState({ citiesFound, showResults: true, doneLoading: true });
+    this.setState({ citiesFound: [...citiesFound], showResults: true, doneLoading: true });
   }
 
   hideResults() {

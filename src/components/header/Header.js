@@ -1,12 +1,12 @@
 import React from 'react'
 import SearchBar from './SearchBar';
-import LocationBar from './LocationBar';
+import CityBar from './CityBar';
 import NavBar from './NavBar';
 
-const Header = ({ addCity }) => (
+const Header = ({ addCity, cities }) => (
   <React.Fragment>
     <SearchBar addCity={addCity} />
-    <LocationBar />
+    <CityBar cities={cities} />
     <NavBar />
   </React.Fragment>
 );

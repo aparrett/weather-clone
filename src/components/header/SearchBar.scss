@@ -31,12 +31,21 @@
     width: calc(100% - 10px);
     max-width: 323px;
 
-    // Ensure text doesn't jump on focus.
-    // border-bottom: 2px solid #000;
-
     &:focus {
       border-bottom: 2px solid #fff;
       outline: none;
+    }
+    
+    &::placeholder {
+      color: $color-placeholder-light;
+    }
+  
+    &::-ms-input-placeholder {
+      color: $color-placeholder-light;
+    }
+    
+    &::-ms-input-placeholder {
+      color: $color-placeholder-light;
     }
   }
 
