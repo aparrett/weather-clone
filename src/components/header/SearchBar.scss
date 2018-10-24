@@ -24,7 +24,8 @@
     color: #fff;
     margin: 0 5px;
     padding: 6px 0;
-    width:323px;
+    width: 100%;
+    max-width: 323px;
 
     &:focus {
       border: none;
