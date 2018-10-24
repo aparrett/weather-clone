@@ -46,6 +46,7 @@ class SearchBar extends Component {
                   doneLoading={this.state.doneLoading} 
                   cities={this.state.citiesFound} 
                   hideResults={this.hideResults.bind(this)}
+                  addCity={this.props.addCity}
                 />}
             </div>
           </div>
