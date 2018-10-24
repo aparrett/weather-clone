@@ -12,5 +12,5 @@ export const findCities = async city => {
   let cities = res.data.postalCodes;
   cities = cities.filter((c, i) => hasUniqueZipCode(cities, c, i) && hasUniqueNameAndState(cities, c, i));
   cities = cities.sort((a, b) => a.placeName.localeCompare(b.placeName));
-  return cities;
+  return cities.slice(0, 15);
 };
