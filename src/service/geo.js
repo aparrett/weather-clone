@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { cityNameShort, cityNameLong } from '../util/cityNames';
 
 const hasUniqueZipCode = (cities, city, i) => 
   cities.findIndex((cInner) => cInner.adminCode2 === city.adminCode2) === i;
@@ -12,5 +13,6 @@ export const findCities = async city => {
   let cities = res.data.postalCodes;
   cities = cities.filter((c, i) => hasUniqueZipCode(cities, c, i) && hasUniqueNameAndState(cities, c, i));
   cities = cities.sort((a, b) => a.placeName.localeCompare(b.placeName));
-  return cities.slice(0, 15);
+  cities = cities.slice(0, 15);
+  return cities.map(city => ({ ...city, shortName: cityNameShort(city), longName: cityNameLong(city) }));
 };
