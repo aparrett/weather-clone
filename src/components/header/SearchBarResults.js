@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { cityNameLong } from '../../util/cityNames';
 
 const SearchBarResultsList = ({ cities, handleCityClick }) => {
   if (cities.length === 0) 
@@ -7,8 +8,8 @@ const SearchBarResultsList = ({ cities, handleCityClick }) => {
   return (
     <ul>
       {cities.map(city => 
-        <li key={city.adminCode2} city={city} onClick={() => handleCityClick(city)}>
-          {`${city.placeName}, ${city.adminName1}, ${city.countryCode}`}
+        <li key={city.postalCode} city={city} onClick={() => handleCityClick(city)}>
+          {cityNameLong(city)}
         </li>
       )}
     </ul>
