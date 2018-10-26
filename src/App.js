@@ -6,7 +6,9 @@ class App extends Component {
   state = { cities: [] };
   
   addCity(city) {
-    this.setState(state => ({ cities: [...state.cities, city] }));
+    if (!this.state.cities.some(c => c.postalCode === city.postalCode)) {
+      this.setState(state => ({ cities: [...state.cities, city] }));
+    }
   }
 
   render() {
