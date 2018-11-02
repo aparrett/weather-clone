@@ -1,16 +1,8 @@
 @import '../../theme/variables';
 
-.logo {
-  background-color: $color-primary-dark;
+.logo img {
   height: 60px;
   width: 62.5px;
-  display: flex;
-  align-items: flex-end;
-  color: #fff;
-  padding: 3px;
-  font-weight: $font-bold;
-  font-size: $font-xs;
-  line-height: 1;
 }
 
 .searchBar {

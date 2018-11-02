@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './SearchBar.scss';
 import searchIcon from '../assets/search-icon.png';
+import logo from '../assets/logo.png';
 import { findCities } from '../../service/geo';
 import SearchBarResults from './SearchBarResults';
 
@@ -29,7 +30,7 @@ class SearchBar extends Component {
       <div className="searchBar">
         <div className="searchBar__wrapper">
           <div className="logo">
-            <div>The Weather Clone</div>
+            <img src={logo} alt="The Weather Clone" />
           </div>
           <div className="searchBar__rest">
             <div className="searchBar__search">
