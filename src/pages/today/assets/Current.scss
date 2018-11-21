@@ -1,0 +1,21 @@
+@import '../../../theme/variables';
+
+.current {
+  &__main, &__panel {
+    float: left;
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .current {
+    &__main {
+      width: calc(100% - 150px);
+    }
+    
+    &__panel {
+      width: 140px;
+      margin-left: 10px;
+    }
+  }
+}
