@@ -30,6 +30,11 @@ h2 {
 .main-container {
   max-width:1200px;
   margin: 0 auto;
+
+  &__left, &__right {
+    width: 100%;
+    float: left;
+  }
 }
 
 .section-full {
@@ -42,6 +47,22 @@ h2 {
   margin: 0 auto;
   display: flex;
   justify-content: flex-start;
+}
+
+@media (min-width: $tablet-width) {
+  .main-container {
+    &__left {
+      width: calc(100% - 330px);
+    }
+
+    &__right {
+      width: 330px;
+    }
+
+    &__left, &__right {
+      padding: 5px 15px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
