@@ -8,15 +8,16 @@
 
 .cityBar__cities {
   width: 100%;
-  display: flex;
+  overflow: hidden;
 }
 
 .cityBar__city {
+  display: block;
   height: 44px;
   width: 300px;
-  display: none;
-}
-
-.cityBar__city:first-child {
-  display: block;
+  float: left;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: $font-xs;
+  border-right: 1px solid #fff;
 }
