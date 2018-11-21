@@ -1,9 +1,22 @@
 @import '../../../theme/variables';
 
 .current {
+  height: 348px;
+  color: #fff;
+
   &__main, &__panel {
     float: left;
     width: 100%;
+    height: 348px;
+  }
+
+  &__main {
+    background-image: linear-gradient(#3b5bdb,#59b6e6);
+  }
+
+  &__panel {
+    background-color: #fff;
+    color: $color-grey-dark;
   }
 }
 
