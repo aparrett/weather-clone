@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Home from './pages/home/Home.js';
-import Header from './components/header/Header.js';
+import Header from './header/Header';
+import { BrowserRouter } from 'react-router-dom';
+import Router from './Router';
 
 class App extends Component {
   state = { cities: [] };
@@ -13,10 +14,12 @@ class App extends Component {
 
   render() {
     return (
-      <React.Fragment>
-        <Header addCity={this.addCity.bind(this)} cities={this.state.cities} />
-        <Home />
-      </React.Fragment>
+      <BrowserRouter>
+        <React.Fragment>
+          <Header addCity={this.addCity.bind(this)} cities={this.state.cities} />
+          <Router />
+        </React.Fragment>
+      </BrowserRouter>
     );
   }
 }
