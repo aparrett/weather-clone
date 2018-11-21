@@ -31,7 +31,7 @@ h2 {
   max-width:1200px;
   margin: 0 auto;
 
-  &__left, &__right {
+  &__main, &__aside {
     width: 100%;
     float: left;
   }
@@ -51,15 +51,15 @@ h2 {
 
 @media (min-width: $tablet-width) {
   .main-container {
-    &__left {
+    &__main {
       width: calc(100% - 330px);
     }
 
-    &__right {
+    &__aside {
       width: 330px;
     }
 
-    &__left, &__right {
+    &__main, &__aside {
       padding: 5px 15px;
     }
   }

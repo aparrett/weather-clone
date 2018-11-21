@@ -3,11 +3,11 @@ import Current from './components/Current';
 
 const Today = () => (
   <div className="main-container">
-    <div className="main-container__left">
+    <div className="main-container__main">
       <Current />
     </div>
-    <div className="main-container__right">
-      Right    
+    <div className="main-container__aside">
+      Almanac
     </div>
   </div>
 );
