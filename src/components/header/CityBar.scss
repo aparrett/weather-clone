@@ -5,3 +5,18 @@
   height: 44px;
   width: 100%;
 }
+
+.cityBar__cities {
+  width: 100%;
+  display: flex;
+}
+
+.cityBar__city {
+  height: 44px;
+  width: 300px;
+  display: none;
+}
+
+.cityBar__city:first-child {
+  display: block;
+}

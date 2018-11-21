@@ -28,7 +28,7 @@ class SearchBar extends Component {
   render() {
     return (
       <div className="searchBar">
-        <div className="searchBar__wrapper">
+        <div className="header-wrapper">
           <div className="logo">
             <img src={logo} alt="The Weather Clone" />
           </div>
