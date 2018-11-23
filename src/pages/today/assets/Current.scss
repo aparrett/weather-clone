@@ -20,6 +20,44 @@
   }
 }
 
+.current__main-title {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.current__main-location {
+  text-transform: uppercase;
+  font-size: $font-xs;
+}
+
+.current__main-time {
+  color: hsla(0,0%,100%,.5);
+}
+
+.current__main-weather {
+  padding: 2px 18px 26px 18px; 
+
+  &-temp {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  &-desc {
+    text-transform: uppercase;
+  }
+
+  &-rest {
+    padding-top: 5px;
+  }
+}
+
+.current__main-video-link {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 6px 10px;
+  font-size: $font-xs;
+}
+
 @media (min-width: $tablet-width) {
   .current {
     &__main {
