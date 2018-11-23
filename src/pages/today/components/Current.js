@@ -1,13 +1,22 @@
 import React, { Component } from 'react';
 import '../assets/Current.scss';
+import moment from 'moment-timezone';
+import { abbrTimeZone } from '../../../util/time';
 
 class CurrentMain extends Component {
+  state = {
+    timeAtLoad: moment().format('hh:mm a'),
+    timeZone: abbrTimeZone()
+  }
+
   render() {
     return (
       <div className="current__main">
         <div className="current__main-title">
           <div className="current__main-location">Saint Peters, MO</div>
-          <div className="current__main-time">as of 8:41 am CST</div>
+          <div className="current__main-time">
+            as of {this.state.timeAtLoad + ' ' + this.state.timeZone}
+          </div>
         </div>
         <div className="current__main-weather">
           <div className="current__main-weather-temp">38<sup>°</sup></div>
