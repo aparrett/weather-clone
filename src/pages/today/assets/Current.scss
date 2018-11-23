@@ -18,6 +18,14 @@
     background-color: #fff;
     color: $color-grey-dark;
   }
+
+  a {
+    color: #fff;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .current__main-title {
