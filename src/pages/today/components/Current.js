@@ -11,7 +11,7 @@ const CurrentWeather = ({ weather }) => {
   return (
     <div className="current__main-weather">
       <div className="current__main-weather-temp">{Math.round(weather.currently.temperature)}<sup>°</sup></div>
-      <div className="current__main-weather-desc">Sunny</div>
+      <div className="current__main-weather-desc">{weather.currently.summary}</div>
       <div className="current__main-weather-rest">
         <div>feels like {Math.round(weather.currently.apparentTemperature)}<sup>°</sup></div>
         <div>H {high}<sup>°</sup> / L {low}<sup>°</sup></div>
